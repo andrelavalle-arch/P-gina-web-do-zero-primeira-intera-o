@@ -1,1 +1,123 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+    background: linear-gradient(135deg, #e50914 0%, #b81d24 100%);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+}
+
+.header-container .logo {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.header-container .logo span {
+    background-color: #fff;
+    color: #b81d24;
+    padding: 2px 8px;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+/* Menu Navegação */
+.main-nav {
+    background-color: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #333;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav a {
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: #fff;
+    background-color: #e50914;
+}
+
+/* Cards de Posts */
+.content-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.post-card {
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 5px solid #555;
+}
+
+.post-card[data-category="importante"] { border-left-color: #e50914; }
+.post-card[data-category="curiosidades"] { border-left-color: #f39c12; }
+
+.post-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.badge-crucial { background-color: #e50914; color: #fff; }
+.badge-trivial { background-color: #f39c12; color: #121212; }
+
+.post-title { font-size: 1.5rem; color: #fff; margin-bottom: 8px; }
+.post-meta { font-size: 0.8rem; color: #777; margin-bottom: 15px; }
+
+/* Botões interativos */
+.btn-read {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-read.read {
+    background-color: #27ae60;
+    color: white;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #555;
+    margin-top: 50px;
+}
