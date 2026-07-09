@@ -68,7 +68,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             button.classList.remove('liked');
             iconSpan.textContent = '🤍'; // Coração vazio se não curtiu
-        }
+        function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
     }
 
     // Inicializa a exibição dos likes ao carregar a página
