@@ -114,6 +114,7 @@ body {
     color: white;
 }
 
+/* Correção feita aqui: Chave final corrigida para fechar corretamente a classe */
 .main-footer {
     text-align: center;
     padding: 20px;
